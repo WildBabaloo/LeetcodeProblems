@@ -1,5 +1,4 @@
 function containsDuplicate(nums: number[]): boolean {
-    // @ts-ignore
     return new Set(nums).size != nums.length;
 
 }
