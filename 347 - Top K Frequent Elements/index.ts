@@ -4,7 +4,7 @@ function topKFrequent(nums: number[], k: number): number[] {
         hashmap.set(num, (hashmap.get(num) ?? 0) + 1)
     }
 
-    const hashmapSort:Map<number, number> = new Map([...hashmap.entries()].sort((a, b) => b[1] - a[1]));
+    const hashmapSort: Map<number, number> = new Map([...hashmap.entries()].sort((a, b) => b[1] - a[1]));
     return [...hashmapSort.keys()].slice(0, k);
 }
 
